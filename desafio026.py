@@ -1,0 +1,5 @@
+frase = str(input('Digite uma frase: ')).lower().strip()
+print(frase)
+print('Número de ocorrências: {}'.format(frase.count('a')))
+print('Primeira ocorrência: {}'.format(frase.find('a')))
+print('Ela aparece a última vez na posição {}'.format(frase.rfind('a')))
