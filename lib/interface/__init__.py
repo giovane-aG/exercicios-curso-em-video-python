@@ -43,14 +43,14 @@ def run():
         cadastrar_pessoa()
       
       elif opcao == 3:
-        print_linha('Programa finalizado')
+        print_linha('PROGRAMA FINALIZADO')
         time.sleep(2)
         break
     
 
 
 def listar_pessoas():
-  print_linha('Opção 1')
+  print_linha('PESSOAS CADASTRADAS')
 
 
   if existe('cadastro.txt'):
@@ -62,13 +62,13 @@ def listar_pessoas():
 
 
 def cadastrar_pessoa():
-  print_linha('Opção 2')
+  print_linha('CADASTRAR PESSOAS')
   
   nome = input('Nome: ')
   idade = input('Idade: ')
  
   with open('cadastro.txt', 'a') as arquivo:
-    arquivo.write(f'{nome:<} {idade:>}\n')
+    arquivo.write(f'{nome:<30} {idade:>5} anos\n')
   
   arquivo.close()
 
